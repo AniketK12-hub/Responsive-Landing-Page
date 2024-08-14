@@ -1,0 +1,68 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to right, #34495e, #2c3e50); /* Navy Gradient */
+    padding: 15px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu li a:hover {
+    color: #ecf0f1; /* Lighter Hover Color */
+    background-color: #2980b9; /* Bright Blue Hover Background */
+}
+
+section {
+    padding: 100px;
+    margin-top: 70px;
+    height: 100vh; /* Ensure each section fills the full viewport height */
+}
+
+/* Background colors for each section with complementary text colors */
+#home {
+    background-color: #ecf0f1; /* Light Gray */
+    color: #2c3e50; /* Dark Navy Text */
+}
+
+#about {
+    background-color: #bdc3c7; /* Silver */
+    color: #2c3e50; /* Dark Navy Text */
+}
+
+#services {
+    background-color: #95a5a6; /* Light Slate Gray */
+    color: #ecf0f1; /* Light Text */
+}
+
+#contact {
+    background-color: #7f8c8d; /* Slate Gray */
+    color: #ecf0f1; /* Light Text */
+}
